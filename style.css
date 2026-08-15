@@ -1,6 +1,6 @@
 /* =========================================================
    Adaptive Movement Research
-   Main stylesheet — v1.0
+   Main stylesheet — v1.1
    ========================================================= */
 
 
@@ -337,8 +337,7 @@ p {
 
     min-height: 48px;
 
-    padding:
-        0 22px;
+    padding: 0 22px;
 
     border-radius: 6px;
 
@@ -454,13 +453,17 @@ p {
     gap: 22px;
 
     margin-top: 52px;
+
+    align-items: stretch;
 }
 
 
 .research-card {
     position: relative;
 
-    min-height: 320px;
+    min-height: 360px;
+
+    height: 100%;
 
     padding: 34px;
 
@@ -475,6 +478,10 @@ p {
     display: flex;
 
     flex-direction: column;
+
+    justify-content: flex-start;
+
+    overflow: visible;
 
     transition:
         transform 0.2s ease,
@@ -508,6 +515,8 @@ p {
     font-weight: 700;
 
     letter-spacing: 0.08em;
+
+    flex: 0 0 auto;
 }
 
 
@@ -521,10 +530,14 @@ p {
     line-height: 1.25;
 
     letter-spacing: -0.02em;
+
+    flex: 0 0 auto;
 }
 
 
 .research-card p {
+    margin-top: 0;
+
     margin-bottom: 28px;
 
     color: var(--text-muted);
@@ -532,11 +545,15 @@ p {
     font-size: 15px;
 
     line-height: 1.7;
+
+    flex: 0 0 auto;
 }
 
 
 .card-status {
     margin-top: auto;
+
+    padding-top: 10px;
 
     color: var(--text-muted);
 
@@ -544,7 +561,13 @@ p {
 
     font-weight: 700;
 
+    line-height: 1.4;
+
     letter-spacing: 0.12em;
+
+    flex: 0 0 auto;
+
+    overflow-wrap: anywhere;
 }
 
 
@@ -612,11 +635,15 @@ p {
     gap: 16px;
 
     margin-top: 44px;
+
+    align-items: stretch;
 }
 
 
 .link-card {
     min-height: 170px;
+
+    height: 100%;
 
     padding: 26px;
 
@@ -629,6 +656,8 @@ p {
     display: flex;
 
     flex-direction: column;
+
+    justify-content: flex-start;
 
     transition:
         transform 0.2s ease,
@@ -761,6 +790,11 @@ p {
     }
 
 
+    .research-card {
+        min-height: 330px;
+    }
+
+
     .link-grid {
         grid-template-columns:
             repeat(2, minmax(0, 1fr));
@@ -854,7 +888,31 @@ p {
     .research-card {
         min-height: auto;
 
+        height: auto;
+
         padding: 28px;
+    }
+
+
+    .card-number {
+        margin-bottom: 28px;
+    }
+
+
+    .research-card h3 {
+        font-size: 22px;
+    }
+
+
+    .research-card p {
+        margin-bottom: 22px;
+    }
+
+
+    .card-status {
+        margin-top: 18px;
+
+        padding-top: 0;
     }
 
 
