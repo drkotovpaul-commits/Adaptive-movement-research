@@ -480,6 +480,17 @@ h4 {
 }
 
 
+/* Secondary buttons on light sections
+   require dark text for sufficient contrast.
+   Hero and dark sections retain the white version above. */
+
+.section:not(.section-dark) .button-secondary {
+
+    color: var(--dark);
+
+}
+
+
 /* =========================================================
    07. TYPOGRAPHY
    ========================================================= */
