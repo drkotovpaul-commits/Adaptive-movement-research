@@ -644,6 +644,13 @@ h4 {
 }
 
 
+.section-dark .research-card h3 {
+
+    color: var(--text);
+
+}
+
+
 .research-card h3 {
 
     margin-top: 0;
