@@ -582,7 +582,7 @@ h4 {
 
     grid-template-columns:
         repeat(
-            3,
+            2,
             minmax(
                 0,
                 1fr
