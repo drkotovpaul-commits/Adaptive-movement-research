@@ -634,6 +634,16 @@ h4 {
 }
 
 
+/* White research cards inside dark sections
+   retain the normal dark text colour. */
+
+.section-dark .research-card {
+
+    color: var(--text);
+
+}
+
+
 .research-card h3 {
 
     margin-top: 0;
